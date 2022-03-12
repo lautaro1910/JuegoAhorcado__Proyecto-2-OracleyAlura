@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <div class="div" style="text-align:center; margin: 50px 0px;">
+      <h1 class="titulo">Ahorcado</h1>
+      <h3 id="reglas"> <b>Reglas:</b><br> 
+        Tiene 4 vidas para intentar adivinar una palabra, presione iniciar juego y se seleccionara una palabra aleatoria para que adivine. <br>
+        Puede jugarlo multijugador o de un jugador <br>
+        <br>
+        Las reglas son: 
+        <p id="preReglas">
+          Un turno por jugador <br>
+          letra acertada = sigue el turno del jugador que acerto <br>
+          letra no acertada = se pierde el turno <br>
+          Adivinar palabra = 60 puntos <br>
+          nota: en caso de que dos o mas jugadores acierten, el puntaje se reparte   <br>
+        </p>
+        Sistema de puntuacion (en construccion)
+    </h3>
+      <button class="btn" id="iniciarJuego">Iniciar Juego</button>
+    </div>
+    
+    <div class="div" id="divAgregarPalabra" style="text-align:center">
+      <h3 id="aggPalabra">Puede agregar una palabra en la lista de palabras antes de jugar</h3>
+      <input class="textInput" type="text" id="inputNuevaPalabra" placeholder="Escriba una nueva palabra">
+      <button class="btn" id="nuevaPalabra">Agregar palabra</button> 
+      <div class="div" id="mensajeError" hidden>
+        Introduzca solo letras (A-Z) o (a-z). Máximo 20 caracteres, minimo 3 caracteres.
+      </div>
+      <div class="div" id="mensajeWordAdded" hidden>
+        Se ha guardado con exito
+      </div>
+    </div>
+    
+    <div class="div" id="divAhorcado" style="text-align:center;" hidden>
+      <div>
+        <h3 id="tituloGame">Comience a jugar</h3>
+        <h3 id="subtituloGame">Intente adivinar la palabra</h3>
+      </div>
+      <input class="textInput" id="inputLetra" maxlength="1" placeholder="Ingrese una letra">
+      <h3 id="letrasUsadas"></h3>
+      <h3 id="letraYaUsada"></h3>
+      <!-- <h3 id="avisoCaseSensitive">Aviso: Las palabras empiezan con mayuscula</h3> -->
+      <div class="div" id="mensajeErrorInputLetra" hidden>
+        Por favor, ingrese una letra de la A a la Z.
+      </div>
+      <button class="btn" id="evLetra">Evaluar Letra</button>
+      <p id="cantidadVidas"></p>
+      <p id="outPut"></p>
+      <div class="div" id="ahorcado"></div>
+      <button class="btn" id="botonVolver">Volver a la pagina principal</button>
+      <div id="ganador">
+        <p id="mensajeGanador"></p>
+        <div class="div" id="botonVolver">
+          <button class="btn" id="botonVolverGanaste">Volver a la pagina principal</button>
+        </div>
+      </div>
+      <div id="perdedor">
+        <p id="mensajePerdedor"></p>
+        <div id="botonVolverDiv">
+          <button class="btn" id="botonVolverPerdiste">Volver a la pagina principal</button>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  
+  <footer id="footer">
+    <p>Todos los derechos reservados - Soria Lautaro |  ir a:</p><a href="https://www.linkedin.com/in/lautaro-soria" target="_blank">Linkedin</a><a href="https://www.github.com/lautaro1910" target="_blank">Github</a><a href="https://www.instagram.com/lautaro_ssoria/" target="_blank">Instagram</a>
+  </footer>
+
+
+  <script type="text/javascript" src="js/canvas.js"></script>
+  <script type="text/javascript" src="js/ahorcado.js"></script>
+  <script type="text/javascript" src="js/agregarNuevaPalabra.js"></script>
+</html>
