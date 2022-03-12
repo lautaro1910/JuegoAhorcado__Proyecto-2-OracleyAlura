@@ -1,5 +1,5 @@
 html {
-  background-image: url("/img/fondo-triangulos.jpg");
+  background-image: url("https://i.ibb.co/4R17G2x/fondo-triangulos.jpg");
 }
 
 .titulo {
@@ -106,7 +106,7 @@ html {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 30px;
-  background-image: url('/img/hangman-game_pm-1024x212.png');
+  background-image: url("https://i.ibb.co/G5CHGxj/hangman-game-pm-1024x212.png");
   opacity: initial;
 }
 

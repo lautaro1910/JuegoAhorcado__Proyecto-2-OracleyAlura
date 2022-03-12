@@ -87,7 +87,7 @@ iniciarGame.addEventListener('click', function(event){
     document.querySelector("#divAhorcado").hidden = false;
     document.querySelector("#divAgregarPalabra").hidden = true;
 
-    document.documentElement.scrollTop = 1000;
+    document.documentElement.scrollTop = 10000;
     document.querySelector("#inputLetra").focus();
 
 })
